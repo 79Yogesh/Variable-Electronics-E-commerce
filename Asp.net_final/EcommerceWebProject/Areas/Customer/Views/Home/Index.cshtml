@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["CategoryName"] = "Phones";
+    <partial name="_ProductPartial" model="@Model" />
+}
+
+@{
+    ViewData["CategoryName"] = "Laptops";
+    <partial name="_ProductPartial" model="@Model" />
+}
+
+@{
+    ViewData["CategoryName"] = "Pc components";
+    <partial name="_ProductPartial" model="@Model" />
+}

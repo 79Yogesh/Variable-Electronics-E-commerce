@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Product>
+@{
+    string categoryName = ViewData["CategoryName"]?.ToString();
+}
+
+
+@{
+    var productsInCategory = Model.Where(product => product.Category.Name == categoryName || string.IsNullOrEmpty(categoryName));
+}
+
+@if (productsInCategory.Any())
+{
+    <h3>@categoryName</h3>
+    <div class="row pb-3">
+        @foreach (var product in productsInCategory)
+        {
+            <div class="col-lg-4 col-sm-6">
+
+                <div class="row p-2">
+                    <div class="col-12 p-1">
+                        <div class="card border-0 p-3 shadow border-top border-5 rounded">
+                            <img src="@product.ImageURl" class="card-img-top rounded" />
+                            <div class="pl-1">
+                                <p class="card-title h5 text-dark opacity-75 text-uppercase text-center">@product.ProductName</p>
+                                <p class="card-title text-warning text-center">@product.Brand</p>
+                            </div>
+                            <div class="pl-1">
+                                <p class="text-dark text-opacity-100 text-center fw-bold">
+                                    Price :₹
+                                    <span>
+                                        <strike>
+                                            @product.Price.ToString()
+                                        </strike>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="pl-1">
+                                <p class="text-dark text-opacity-75 text-center text-success">
+                                    Discount Price :₹
+                                    <span>
+                                        @product.DisccountPrice.ToString()
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <a asp-action="Details" asp-route-productId="@product.Id" class="btn btn-primary bg-gradient border-0 form-control">Buy Product</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
