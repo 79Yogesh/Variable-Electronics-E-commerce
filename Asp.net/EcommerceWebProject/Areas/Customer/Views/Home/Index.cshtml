@@ -1,0 +1,52 @@
+﻿ @model IEnumerable<Product>
+
+<div style="width: 100%; height: 500px; position: relative; overflow: hidden;">
+    <video src="~/images/home_vid.mp4" autoplay loop muted style="width: 100%; height: 100%; object-fit: cover;"></video>
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #000; text-align: center;">
+        <h1 style="color: white; text-shadow: 2px 2px 4px grey; font-size: 7.5em; font-family:'Agency FB'">Variable</h1>
+        <p style="color: white; text-shadow: 2px 2px 4px grey; font-size: 1.5em; font-style: italic;">Power up your life with the latest tech – where innovation meets your doorstep!</p>
+    </div>
+</div>
+
+ <div class="row pb-3">
+    @foreach(var product in Model)
+    {
+       <div class="col-lg-4 col-sm-6">
+           <div class="row p-2">
+               <div class="col-12 p-1">
+                   <div class="card border-0 p-3 shadow border-top border-5 rounded">
+                       <img src="@product.ImageURl" class="card-img-top rounded"/>
+                       <div class="pl-1">
+                           <p class="card-title h5 text-dark opacity-75 text-uppercase text-center">@product.ProductName</p>
+                            <p class="card-title text-warning text-center">@product.Brand</p>
+                            </div>
+                        <div class="pl-1">
+                            <p class="text-dark text-opacity-100 text-center fw-bold">
+                                Price :₹
+                                <span>
+                                        <strike>
+                                            @product.Price.ToString()
+                                        </strike>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="pl-1">
+                            <p class="text-dark text-opacity-75 text-center text-success">
+                                Discount Price :₹
+                                <span>
+                                    @product.DisccountPrice.ToString()
+                                </span>
+                            </p>
+                        </div>
+                      </div>
+                   <a asp-action="Details" asp-route-productId="@product.Id" class="btn btn-primary bg-gradient border-0 form-control">Buy Product</a>
+                </div>
+            </div>
+        </div>
+    }
+</div> 
+
+
+
+
+

@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "l+lHfIJ7YmUGU7fUe/24n0fY0JSzTGsEc9AmrgZ34M8yHiFFOutIJ1n5Rj1CdmB/wXrJMnsB4Rkk5LFQL/Ahgw==",
+  "success": true,
+  "projectFilePath": "D:\\Project_Cdac\\Major Final Project\\Asp.net_final\\Variable.Utility\\Variable.Utility.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\recen\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.1\\microsoft.aspnetcore.cryptography.internal.8.0.1.nupkg.sha512",
+    "C:\\Users\\recen\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.1\\microsoft.aspnetcore.cryptography.keyderivation.8.0.1.nupkg.sha512",
+    "C:\\Users\\recen\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.1\\microsoft.aspnetcore.identity.ui.8.0.1.nupkg.sha512",
+    "C:\\Users\\recen\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\recen\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\recen\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\recen\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\recen\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\8.0.1\\microsoft.extensions.fileproviders.embedded.8.0.1.nupkg.sha512",
+    "C:\\Users\\recen\\.nuget\\packages\\microsoft.extensions.identity.core\\8.0.1\\microsoft.extensions.identity.core.8.0.1.nupkg.sha512",
+    "C:\\Users\\recen\\.nuget\\packages\\microsoft.extensions.identity.stores\\8.0.1\\microsoft.extensions.identity.stores.8.0.1.nupkg.sha512",
+    "C:\\Users\\recen\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
+    "C:\\Users\\recen\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\recen\\.nuget\\packages\\microsoft.extensions.options\\8.0.1\\microsoft.extensions.options.8.0.1.nupkg.sha512",
+    "C:\\Users\\recen\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
